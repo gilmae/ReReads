@@ -9,16 +9,8 @@ class Book extends Model
   public static function all()
   {
     $conn = Model::get_connection();
-    $books = [];
     $data = $conn->select("book", ["id", "name", "authors", "created_at", "updated_at"]);
-    
-    foreach ($data as $datum)
-    {
-       $book = new Book();
-       $book->from_array($datum);
-       $books.array_push($books, $book);  
-    }
-    return $books;
+    return Model::from_arrays($data, function(){return new Book;});
   }
   
   public static function find($id)

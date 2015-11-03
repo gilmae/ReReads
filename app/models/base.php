@@ -51,5 +51,17 @@
         $this->{$attrName} = $array[$attrName];
       }
     }
+    
+    protected static function from_arrays($array, $constructor)
+    {
+       $models = [];
+       foreach($array as $item)
+       {
+         $model = $constructor();
+         $model->from_array($item);
+         array_push($models, $model);
+       }
+       return $models;  
+    }
   }
  ?>

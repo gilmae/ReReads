@@ -10,9 +10,20 @@ class Read extends Model
   
   public static function all()
   {
-    //$conn = new medoo($GLOBALS['connections']['development']);
     $conn = Model::get_connection();
-    return $conn->select($this-get_class(), ["id","read_at", "book_id", "account_id", "thoughts", "created_at", "updated_at"]);
+    $data = $conn->select($this-get_class(), ["id","read_at", "book_id", "account_id", "thoughts", "created_at", "updated_at"]);
+    return Model::from_arrays($data, function(){return new Read;});
+  }
+  
+  public static function find_by_book_and_account($account_id, $book_id)
+  {
+    $conn = Model::get_connection();
+    $data = $conn->select($this-get_class(), 
+       ["id","read_at", "book_id", "account_id", "thoughts", "created_at", "updated_at"],
+       ["book_id"=>$book_id, "account_id"=>$account_id]
+    );
+
+    return Model::from_arrays($data, function(){return new Read;});
   }
   
   protected function insert_fields(){
