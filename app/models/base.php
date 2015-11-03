@@ -3,20 +3,19 @@
     public $id = 0;
     public $created_at;
     public $updated_at;
-     
+    
     public function isNew()
     {
       return $this->id == 0;
     }
   
-    protected function Inserting()
+    protected function inserting()
     {
       $this->created_at = date("Y-m-d H:i:s");
       $this->updated_at = $this->created_at;
-      echo($this->created_at);
     }
      
-    protected function Updating()
+    protected function updating()
     {
       $this->updated_at = date("Y-m-d H:i:s");
     }
@@ -26,8 +25,8 @@
        return new medoo($GLOBALS['connections']['development']);
     }
     
-    abstract protected function Insert($conn);
-    abstract protected function Update($conn);
+    abstract protected function insert_fields();
+    abstract protected function update_fields();
     
     public function Save()
     {
@@ -35,14 +34,21 @@
       
       if ($this->isNew())
       {
-        $this->Inserting();
-        $this->Insert($conn);   
-        //$this->id = $conn->pdo->lastInsertId;     
+        $this->inserting();
+        $this->id = $conn->insert(get_class($this), $this->insert_fields());   
       }
       else
       {
-        $this->Updating();
-        $this->Update($conn);
+        $this->updating();
+        $conn->update(get_class($this), $this->update_fields(), ["id"=>$this->id]);   
+      }
+    }
+      
+    protected function from_array($array)
+    {
+      foreach(get_object_vars($this) as $attrName => $attrValue)
+      {
+        $this->{$attrName} = $array[$attrName];
       }
     }
   }
