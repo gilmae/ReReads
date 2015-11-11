@@ -29,11 +29,18 @@ class SessionController extends Controller
 		}
 		$_SESSION["logged_in_user"] = $account->id;
 		
-		header( 'Location: http://reread.local/i'  ) ;
+		header('Location: http://reread.local/i');
 	}
 	
 	public function index()
 	{
-		echo("**".$_SESSION["logged_in_user"]."**");
+		$user = Account::find($_SESSION["logged_in_user"]);
+		
+		if (!empty($user))
+		{
+			$this->view("session", "home", $user);
+			return;
+		}
+		header('Location: http://reread.local/i/am');
 	}
 }

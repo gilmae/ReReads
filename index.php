@@ -48,12 +48,10 @@ switch($path_info['call_parts'][0])
     
     if (count($path_info['call_parts']) == 1)
     {
-        echo("1");
         $controller->index();
     }
     else
     {
-      echo("!1");
       switch ($path_info['call_parts'][1])
       {
         case 'am':
@@ -67,22 +65,7 @@ switch($path_info['call_parts'][0])
           }
       }
     }
-    
-  
 }
-echo '<pre>'.print_r($path_info, true).'</pre>';
-
-#$controller = new SessionController;
-
-#if ($_SERVER['REQUEST_METHOD'] == "POST")
-#{
-#	$controller->login_post();
-#}
-#else
-#{
-#	$controller->login();	
-#}
-
-
+//echo '<pre>'.print_r($path_info, true).'</pre>';
 
 ?>
