@@ -4,6 +4,26 @@
     public $created_at;
     public $updated_at;
     
+    public static function all($id)
+    {
+      $klass = get_called_class();
+      $conn = Model::get_connection();
+      $data = $conn->select($klass, ["id", "name", "authors", "created_at", "updated_at"]);
+      return Model::build_all($data, $klass);
+    }
+
+    public static function find($id)
+    {
+      $klass = get_called_class();
+      $conn = Model::get_connection();
+		  $data = $conn->select($klass, 
+			 "*",
+			 ["id"=>$id]
+		  );
+   
+   		return Model::build_first($data, $klass);
+    }
+    
     public function isNew()
     {
       return $this->id == 0;
@@ -52,12 +72,24 @@
       }
     }
     
-    protected static function from_arrays($array, $constructor)
+    protected static function build_first($array, $klass)
+    {
+       if (empty($array) || count($array) == 0)
+       {
+         return null;
+       }
+       
+       $model = new $klass();
+       $model->from_array($array[0]);
+       return $model;
+    }
+    
+    protected static function build_all($array, $klass)
     {
        $models = [];
        foreach($array as $item)
        {
-         $model = $constructor();
+         $model = new $klass();
          $model->from_array($item);
          array_push($models, $model);
        }

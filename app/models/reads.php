@@ -8,22 +8,15 @@ class Read extends Model
   public $account_id = 0;
   public $thoughts = '';
   
-  public static function all()
-  {
-    $conn = Model::get_connection();
-    $data = $conn->select($this-get_class(), ["id","read_at", "book_id", "account_id", "thoughts", "created_at", "updated_at"]);
-    return Model::from_arrays($data, function(){return new Read;});
-  }
-  
   public static function find_by_book_and_account($account_id, $book_id)
   {
     $conn = Model::get_connection();
-    $data = $conn->select($this-get_class(), 
+    $data = $conn->select("read", 
        ["id","read_at", "book_id", "account_id", "thoughts", "created_at", "updated_at"],
        ["book_id"=>$book_id, "account_id"=>$account_id]
     );
 
-    return Model::from_arrays($data, function(){return new Read;});
+    return Model::build_all($data, "Read");
   }
   
   protected function insert_fields(){

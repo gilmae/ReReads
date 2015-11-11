@@ -63,6 +63,7 @@ switch($path_info['call_parts'][0])
           {
             $controller->login();
           }
+          break;
       }
     }
 }

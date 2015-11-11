@@ -6,19 +6,6 @@ class Book extends Model
   public $name = '';
   public $authors = '';
   
-  public static function all()
-  {
-    $conn = Model::get_connection();
-    $data = $conn->select("book", ["id", "name", "authors", "created_at", "updated_at"]);
-    return Model::from_arrays($data, function(){return new Book;});
-  }
-  
-  public static function find($id)
-  {
-    $conn = Model::get_connection();
-    return $conn->select("book", ["id", "name", "authors", "created_at", "updated_at"], ["id"=>$id]);
-  }
-  
   protected function insert_fields(){
     return [
         "name"=>$this->name,
