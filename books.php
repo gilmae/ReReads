@@ -2,7 +2,6 @@
    include 'application.php';
    $books = Book::all();
 ?>
-
 <table>
 	<tr>
 		<th>Title</th>
