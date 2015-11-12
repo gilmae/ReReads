@@ -42,7 +42,7 @@
      
     public static function get_connection()
     {
-       return new medoo($GLOBALS['connections']['development']);
+       return new medoo($GLOBALS['connections'][$GLOBALS["environment"]]);
     }
     
     abstract protected function insert_fields();

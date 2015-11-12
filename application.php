@@ -1,7 +1,12 @@
 <?php
 
+foreach (glob("config/*.php") as $filename)
+{
+    include $filename;
+}
+
 require 'lib/medoo.php';
-require 'config/database.php';
+
 require 'view_context.php';
 foreach (glob("app/models/*.php") as $filename)
 {
