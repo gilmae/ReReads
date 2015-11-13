@@ -1,6 +1,19 @@
 <?php
 class SessionController extends Controller
 {
+	public function add()
+	{
+		$book_id = trim($_POST["book_id"]);
+		
+		$collection = new Collection();
+		$collection->book_id = $book_id;
+		$collection->account_id = $_SESSION["logged_in_user"];
+		
+		$collection->save();
+		
+		header('Location: http://reread.local/i');
+	}
+	
 	public function login()
 	{
 	   $this->view("session", "login", null);

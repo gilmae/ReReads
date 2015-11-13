@@ -4,7 +4,7 @@
     public $created_at;
     public $updated_at;
     
-    public static function all($id)
+    public static function all()
     {
       $klass = get_called_class();
       $conn = Model::get_connection();
@@ -24,7 +24,7 @@
    		return Model::build_first($data, $klass);
     }
     
-    public function isNew()
+    public function is_new()
     {
       return $this->id == 0;
     }
@@ -48,11 +48,11 @@
     abstract protected function insert_fields();
     abstract protected function update_fields();
     
-    public function Save()
+    public function save()
     {
       $conn = Model::get_connection();
       
-      if ($this->isNew())
+      if ($this->is_new())
       {
         $this->inserting();
         $this->id = $conn->insert(get_class($this), $this->insert_fields());   

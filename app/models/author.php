@@ -1,21 +1,21 @@
 <?php
 
-class Book extends Model
+class Author extends Model
 {
 
   public $name = '';
   
-  public function find_by_owner($account_id)
+  public function find_by_book($book_id)
   {
     $conn = Model::get_connection();
     
-    $data = $conn->select("book", 
-      ["[><]collection" => ["id" => "book_id"]],
-      ["book.id", "book.name", "book.created_at", "book.updated_at"],
-      ["collection.account_id"=>$account_id]
+    $data = $conn->select("author", 
+      ["[><]book_author" => ["id" => "author_id"]],
+      ["author.id", "author.name", "author.created_at", "author.updated_at"],
+      ["book_author.book_id"=>$book_id]
     );
-
-    return Model::build_all($data, "Book");
+    
+    return Model::build_all($data, "Author");
   }
   
   

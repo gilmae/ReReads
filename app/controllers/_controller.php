@@ -16,21 +16,11 @@ class Controller
 	public function view($controller, $view, $model)
 	{
 		//include("app/views/".$controller."/".$view.".php");
-		$view = $this->render_template("app/views/".$controller."/".$view.".php", array('html'=>$GLOBALS['view_context'], 'model'=>$model, 'errors'=>$this->errors));
+		$ctx = $GLOBALS['view_context'];
+		$view = $ctx->render_template("app/views/".$controller."/".$view.".php", array('html'=>$ctx, 'model'=>$model, 'errors'=>$this->errors));
 		echo($view);
 	}
 	
-	function render_template($template_file, $vars = array())
-  {
-    if(file_exists($template_file))
-    {
-      ob_start();
-        extract($vars);
-        include($template_file);
-      return ob_get_clean();
-    }else
-      throw new MissingTemplateException("Template: {$template_file} could not be found!");
-  }
 	
 
 }
