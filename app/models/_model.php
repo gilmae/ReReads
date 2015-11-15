@@ -57,7 +57,7 @@
       {
         $this->inserting();
         $fields = array("created_at"=>$this->created_at, "updated_at"=>$this->updated_at);
-        array_merge($fields, $this->insert_fields());
+        $fields = array_merge($fields, $this->insert_fields());
         
         $this->id = $conn->insert(get_class($this), $fields);   
       }
@@ -69,6 +69,7 @@
         
         $conn->update(get_class($this), $fields, ["id"=>$this->id]);   
       }
+      echo($conn->last_query());
     }
       
     protected function from_array($array)

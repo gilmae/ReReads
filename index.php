@@ -67,6 +67,9 @@ switch($path_info['call_parts'][0])
         case 'add':
           $controller->add();
           break;
+        case 'start_reading':
+          $controller->start_reading();
+          break;
       }
     }
 }

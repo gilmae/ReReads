@@ -14,6 +14,18 @@ class SessionController extends Controller
 		header('Location: http://reread.local/i');
 	}
 	
+	public function start_reading()
+	{
+		$book_id = trim($_POST["book_id"]);
+
+		$read = new Read;
+		$read->book_id = $book_id;
+		$read->account_id = $_SESSION["logged_in_user"];
+		$read->started_at = date("Y-m-d H:i:s");
+		
+		$read->save();
+	}
+	
 	public function login()
 	{
 	   $this->view("session", "login", null);
