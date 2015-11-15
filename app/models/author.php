@@ -21,17 +21,14 @@ class Author extends Model
   
   protected function insert_fields(){
     return [
-        "name"=>$this->name,
-        "created_at"=>$this->created_at,
-        "updated_at"=>$this->updated_at
+        "name"=>$this->name
       ];
   }
 
   protected function update_fields()
   {
     return [
-        "name"=>$this->name,
-        "updated_at"=>$this->updated_at
+        "name"=>$this->name
       ];
   }
 }

@@ -21,7 +21,8 @@ class ViewContext
   	{
     	if(file_exists($template_file))
     	{
-      		ob_start();
+      		$vars['html'] = $this;
+			ob_start();
         	extract($vars);
         	include($template_file);
       		return ob_get_clean();

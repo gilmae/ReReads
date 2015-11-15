@@ -8,7 +8,7 @@
     {
       $klass = get_called_class();
       $conn = Model::get_connection();
-      $data = $conn->select($klass, ["id", "name", "authors", "created_at", "updated_at"]);
+      $data = $conn->select($klass, "*");
       return Model::build_all($data, $klass);
     }
 
@@ -52,15 +52,22 @@
     {
       $conn = Model::get_connection();
       
+      
       if ($this->is_new())
       {
         $this->inserting();
-        $this->id = $conn->insert(get_class($this), $this->insert_fields());   
+        $fields = array("created_at"=>$this->created_at, "updated_at"=>$this->updated_at);
+        array_merge($fields, $this->insert_fields());
+        
+        $this->id = $conn->insert(get_class($this), $fields);   
       }
       else
       {
         $this->updating();
-        $conn->update(get_class($this), $this->update_fields(), ["id"=>$this->id]);   
+        $fields = array("created_at"=>$this->created_at, "updated_at"=>$this->updated_at);
+        array_merge($fields, $this->update_fields());
+        
+        $conn->update(get_class($this), $fields, ["id"=>$this->id]);   
       }
     }
       

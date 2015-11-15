@@ -24,9 +24,7 @@ class Read extends Model
         "read_at"=>$this->read_at,
         "book_id"=>$this->book_id,
         "thoughts"=>$this->thoughts,
-        "account_id"=>$this->account_id,
-        "created_at"=>$this->created_at,
-        "updated_at"=>$this->updated_at
+        "account_id"=>$this->account_id
       ];
   }
 
@@ -36,8 +34,7 @@ class Read extends Model
         "read_at"=>$this->read_at,
         "book_id"=>$this->book_id,
         "account_id"=>$this->account_id,
-        "thoughts"=>$this->thoughts,
-        "updated_at"=>$this->updated_at
+        "thoughts"=>$this->thoughts
       ];
   }
 }

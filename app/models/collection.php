@@ -8,9 +8,7 @@ class Collection extends Model
 	{
     	return [
         	"book_id"=>$this->book_id,
-        	"account_id"=>$this->account_id,
-        	"created_at"=>$this->created_at,
-        	"updated_at"=>$this->updated_at
+        	"account_id"=>$this->account_id
       	];
   	}
 
@@ -18,8 +16,7 @@ class Collection extends Model
   	{
    		return [
     	    "book_id"=>$this->book_id,
-    	    "account_id"=>$this->account_id,
-        	"updated_at"=>$this->updated_at
+    	    "account_id"=>$this->account_id
 	      ];
   	}
 }
