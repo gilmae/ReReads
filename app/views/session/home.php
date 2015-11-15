@@ -18,6 +18,7 @@ foreach ($owned_books as $book)
 	 	<select name="book_id" id="book_id" class="form-control>
 		<?php
 		$books = Book::all();
+
 		foreach ($books as $book)
 		{
 		?>
