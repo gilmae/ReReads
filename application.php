@@ -5,6 +5,7 @@ foreach (glob("config/*.php") as $filename)
     include $filename;
 }
 
+
 require 'lib/medoo.php';
 
 require 'view_context.php';
@@ -27,5 +28,6 @@ session_start();
      $GLOBALS['view_context'] = new ViewContext; 
 
 
+require 'router.php';
     
 ?>
