@@ -10,3 +10,35 @@
 
 / 						general landing page
 */?>
+
+<?php
+
+require "vendor/altorouter/altorouter/AltoRouter.php";
+class Router
+{
+  private $router;
+
+  function Router()
+  {
+    $this->router = new AltoRouter();
+
+    $this->router->map('GET', '/i', array('c'=>'Session', 'a'=>'index'), 'user_home');
+    $this->router->map('GET', '/i/am', array('c'=>'Session', 'a'=>'login'), 'login');
+    $this->router->map('POST', '/i/am', array('c'=>'Session', 'a'=>'login_post'), 'login_post');
+    $this->router->map('GET', '/i/add/[i:id]', array('c'=>'Session', 'a'=>'add'), 'user_add_book');
+    $this->router->map('GET', '/i/start_reading/[i:id]', array('c'=>'Session', 'a'=>'start_reading'), 'user_starts_reading');
+  }
+
+  function route()
+  {
+    $match = $this->router->match();
+
+    $controller_name = $match['target']['c']."Controller";
+
+    $controller = new $controller_name;
+
+    $controller->$match['target']['a']();
+  }
+}
+
+ ?>

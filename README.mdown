@@ -1,0 +1,16 @@
+# Reread
+
+* I don't really want to give Amazon any more data about me than it already has
+* Because I want to control my own data.
+* Also, cut your own wood and you'll be warm twice
+
+
+
+/:username/					List of reads, in reverse chronological order of completion = currently reading
+/:username/read/:id			Details of a reading - item, review, stars, dates
+/:username/shelf/:shelfname	Collection
+
+/i/am							Login page
+/i                Alias for landing page of current user					
+/i/read/:id					Alias for a reading for current user
+/i/shelf/:shelfname			Collection, aliased for current user

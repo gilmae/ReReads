@@ -24,10 +24,6 @@ session_start();
 
 
 	// TODO Find a place for this, some sort of View renderer
-    
-     $GLOBALS['view_context'] = new ViewContext; 
 
-
-require 'router.php';
-    
+     $GLOBALS['view_context'] = new ViewContext;
 ?>
