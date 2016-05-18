@@ -4,6 +4,9 @@
 * Because I want to control my own data.
 * Also, cut your own wood and you'll be warm twice
 
+Although, honestly, at this stage I am just throwing shit against the wall and
+seeing what sticks
+
 
 
 /:username/					List of reads, in reverse chronological order of completion = currently reading
