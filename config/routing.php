@@ -22,6 +22,7 @@ class Router
   {
     $this->router = new AltoRouter();
 
+    $this->router->map('GET', '/', array('c'=>'Session', 'a'=>'index'), 'root');
     $this->router->map('GET', '/i', array('c'=>'Session', 'a'=>'index'), 'user_home');
     $this->router->map('GET', '/i/am', array('c'=>'Session', 'a'=>'login'), 'login');
     $this->router->map('POST', '/i/am', array('c'=>'Session', 'a'=>'login_post'), 'login_post');
