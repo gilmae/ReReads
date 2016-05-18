@@ -4,16 +4,16 @@ class SessionController extends Controller
 	public function add()
 	{
 		$book_id = trim($_POST["book_id"]);
-		
+
 		$collection = new Collection();
 		$collection->book_id = $book_id;
 		$collection->account_id = $_SESSION["logged_in_user"];
-		
+
 		$collection->save();
-		
+
 		header('Location: http://reread.local/i');
 	}
-	
+
 	public function start_reading()
 	{
 		$book_id = trim($_POST["book_id"]);
@@ -22,19 +22,19 @@ class SessionController extends Controller
 		$read->book_id = $book_id;
 		$read->account_id = $_SESSION["logged_in_user"];
 		$read->started_at = date("Y-m-d H:i:s");
-		
+
 		$read->save();
 	}
-	
+
 	public function login()
 	{
 	   $this->view("session", "login", null);
 	}
-	
+
 	public function login_post()
 	{
 		$name = trim($_POST["name"]);
-		
+
 		$account = Account::find_by_name($name);
 
 		if (empty($account))
@@ -43,7 +43,7 @@ class SessionController extends Controller
 			$this->view("session", "login", null);
 			return;
 		}
-		
+
 		$password = trim($_POST["password"]);
 
 		if (empty($password) || $account->password != trim($_POST["password"]))
@@ -53,17 +53,18 @@ class SessionController extends Controller
 			return;
 		}
 		$_SESSION["logged_in_user"] = $account->id;
-		
+
 		header('Location: http://reread.local/i');
 	}
-	
+
 	public function index()
 	{
 		$user = Account::find($_SESSION["logged_in_user"]);
-		
+
 		if (!empty($user))
 		{
-			$this->view("session", "home", $user);
+			$owned_books = Book::find_by_owner($user->id);
+			$this->view("session", "home", (object)array('user'=>$user, 'owned_books'=>$owned_books));
 			return;
 		}
 		header('Location: http://reread.local/i/am');
