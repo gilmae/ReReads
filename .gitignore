@@ -2,3 +2,4 @@ log/**/*
 composer.phar
 *.lock
 vendor/**/*
+config/google_api.php

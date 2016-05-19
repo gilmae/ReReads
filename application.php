@@ -1,10 +1,11 @@
 <?php
 
+require 'vendor/autoload.php';
+
 foreach (glob("config/*.php") as $filename)
 {
     include $filename;
 }
-
 
 require 'lib/medoo.php';
 

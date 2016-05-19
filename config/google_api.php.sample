@@ -1,0 +1,5 @@
+<?php
+  $GLOBALS['google_api_keys'] = [
+      'google_books' => 'API_KEY'
+  ];
+?>

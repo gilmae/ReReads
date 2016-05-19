@@ -28,6 +28,7 @@ class Router
     $this->router->map('POST', '/i/am', array('c'=>'Session', 'a'=>'login_post'), 'login_post');
     $this->router->map('GET', '/i/add/[i:id]', array('c'=>'Session', 'a'=>'add'), 'user_add_book');
     $this->router->map('GET', '/i/start_reading/[i:id]', array('c'=>'Session', 'a'=>'start_reading'), 'user_starts_reading');
+    $this->router->map('GET', '/book/search/', array('c'=>'Book', 'a'=>'search'), 'search_for_book');
     $this->router->map('GET', '/[a:username]', array('c'=>'User', 'a'=>'index'), 'other_user_home');
   }
 
