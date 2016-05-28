@@ -1,4 +1,5 @@
 <?php
+
 class SessionController extends Controller
 {
 	public function add()
@@ -7,7 +8,7 @@ class SessionController extends Controller
 
 		$collection = new Collection();
 		$collection->book_id = $book_id;
-		$collection->account_id = $_SESSION["logged_in_user"];
+		$collection->account_id = $this->get_account_id();
 
 		$collection->save();
 
@@ -20,7 +21,7 @@ class SessionController extends Controller
 
 		$read = new Read;
 		$read->book_id = $book_id;
-		$read->account_id = $_SESSION["logged_in_user"];
+		$read->account_id = $this->get_account_id();
 		$read->started_at = date("Y-m-d H:i:s");
 
 		$read->save();
@@ -34,32 +35,32 @@ class SessionController extends Controller
 	public function login_post()
 	{
 		$name = trim($_POST["name"]);
+		$password = trim($_POST["password"]);
+    $account = null;
 
-		$account = Account::find_by_name($name);
+		$result = LoginService::login($name, $password, $account);
 
-		if (empty($account))
+		if (empty($account) || $result == LoginService::UNKNOWN_USERNAME)
 		{
 			$GLOBALS['view_context']->add_error("name", "I don't think I know you");
 			$this->view("session", "login", null);
 			return;
 		}
 
-		$password = trim($_POST["password"]);
-
-		if (empty($password) || $account->password != trim($_POST["password"]))
+    if ($result == LoginService::INVALID_PASSWORD)
 		{
 			$GLOBALS['view_context']->add_error("password", "I don't think you got that right");
 			$this->view("session", "login", null);
 			return;
 		}
-		$_SESSION["logged_in_user"] = $account->id;
+		$this->set_account_id($account->id);
 
 		header('Location: http://reread.local/i');
 	}
 
 	public function index()
 	{
-		$user = Account::find($_SESSION["logged_in_user"]);
+		$user = Account::find($this->get_account_id());
 
 		if (!empty($user))
 		{

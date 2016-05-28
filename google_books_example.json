@@ -1,0 +1,860 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 164,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "j1niBwwWafsC",
+   "etag": "/OWkQ9ElfLk",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/j1niBwwWafsC",
+   "volumeInfo": {
+    "title": "Sorceress of Darshiva",
+    "authors": [
+     "David Eddings"
+    ],
+    "publisher": "Random House",
+    "publishedDate": "2000-03-08",
+    "description": "In this fourth book of The Malloreon, Garion and his companions continue their desperate search for Zandramas, the child of dark and abductor of Garion's baby son, Geran. Led by the orb from Mallorea to the island of Melcena, they discover the place where the sardion once rested and also find Senji, a self-taught wizard whose undamaged copy of the Ashabine oracles carries a message for Garion from the evil god Torak. As Zandramas's intention to fulfil the Dark Destiny becomes clear, Garion and his friends know that they must travel to Kell. There they will discover from the Malloreon Gospels the truth of their ultimate destination, The Place Which Is No More. But the friends are not alone in their search as the prophecies of Cyradis, the Seeress of Kell, begin to be fulfilled. THUS CONTINUES BOOK FOUR OF THE MALLOREON",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780552148054"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0552148059"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 395,
+    "printType": "BOOK",
+    "categories": [
+     "Darshiva (Imaginary place)"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 79,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.14.0.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=j1niBwwWafsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=j1niBwwWafsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=j1niBwwWafsC&pg=PA4&dq=9780552148054&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=j1niBwwWafsC&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Sorceress_of_Darshiva.html?hl=&id=j1niBwwWafsC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=j1niBwwWafsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "BOOK FOUR OF THE MALLOREON: SORCERESS OF DARSHIVA A CORGI \u003cbr\u003e\nBOOK : \u003cb\u003e9780552148054\u003c/b\u003e Originally published in Great Britain b Bantam Press, a \u003cbr\u003e\ndivision of Transworld Pub ishers PRINTING HISI&#39;ORY Bantam Press edition&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "pBlSVDCMKi8C",
+   "etag": "rPGj6FjdFXo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/pBlSVDCMKi8C",
+   "volumeInfo": {
+    "title": "Sorceress of Darshiva",
+    "authors": [
+     "David Eddings"
+    ],
+    "publisher": "Random House",
+    "publishedDate": "2013-04-01",
+    "description": "\"BOOK 4 OF THE MALLOREON, the worldwide bestselling fantasy series by one of the godfathers of the tradition. Discover the epic stories that inspired generations of fantasy writers - from Raymond Feist's The Riftwar Cycle to George R. R. Martin's A Game of Thrones. i\u003e he Dark Destiny will soon become clear... The Ashabine oracles have been found. They carry a message from the evil god Torak, who Garion once destroyed one that spells the end of all he thought he knew. A great battle of demons and men looms. The forces of good must ready themselves for attack from all sides. A war that is impossible to win and that they cannot afford to lose\"",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780552168618"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0552168610"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 400,
+    "printType": "BOOK",
+    "categories": [
+     "Fantasy fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 79,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.7.0.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=pBlSVDCMKi8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=pBlSVDCMKi8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=pBlSVDCMKi8C&printsec=frontcover&dq=9780552148054&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=pBlSVDCMKi8C&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Sorceress_of_Darshiva.html?hl=&id=pBlSVDCMKi8C"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=pBlSVDCMKi8C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Discover the epic stories that inspired generations of fantasy writers - from Raymond Feist&#39;s The Riftwar Cycle to George R. R. Martin&#39;s A Game of Thrones. The Dark Destiny will soon become clear... The Ashabine oracles have been found."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "M5XieAfA76sC",
+   "etag": "ruS5kCAp1VI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/M5XieAfA76sC",
+   "volumeInfo": {
+    "title": "Guardians Of The West",
+    "subtitle": "(Malloreon 1)",
+    "authors": [
+     "David Eddings"
+    ],
+    "publisher": "Random House",
+    "publishedDate": "2010-02-23",
+    "description": "BOOK 1 OF THE MALLOREON, the worldwide bestselling fantasy series by one of the godfathers of the tradition. Discover the epic stories that inspired generations of fantasy writers - from Raymond Feist's The Riftwar Cycle to George R. R. Martin's A Game of Thrones. Evil doesn’t disappear. It just changes form... The evil God Torak is slain, and Garion, the long-awaited King of Riva, hopes for peace. And for a while he gets his wish. But then a darker prophecy is revealed, and new and more insidious forces gather. As danger mounts from all quarters, and his son is kidnapped, Garion has no choice but to follow his fate, wherever it might lead...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781407056890"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1407056891"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 432,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 199,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.26.15.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=M5XieAfA76sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=M5XieAfA76sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=M5XieAfA76sC&printsec=frontcover&dq=9780552148054&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=M5XieAfA76sC&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Guardians_Of_The_West.html?hl=&id=M5XieAfA76sC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 10.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 10.99,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "http://books.google.com.au/books?id=M5XieAfA76sC&dq=9780552148054&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "AUD"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Guardians_Of_The_West-sample-epub.acsm?id=M5XieAfA76sC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=M5XieAfA76sC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Discover the epic stories that inspired generations of fantasy writers - from Raymond Feist&#39;s The Riftwar Cycle to George R. R. Martin&#39;s A Game of Thrones. Evil doesn’t disappear. It just changes form."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "R4EV4bKz1OAC",
+   "etag": "bSk4umxlDGw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/R4EV4bKz1OAC",
+   "volumeInfo": {
+    "title": "Practical Reliability Engineering",
+    "authors": [
+     "Patrick O'Connor",
+     "Andre Kleyner"
+    ],
+    "publisher": "John Wiley & Sons",
+    "publishedDate": "2011-11-22",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781119964094"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1119964091"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 512,
+    "printType": "BOOK",
+    "categories": [
+     "Technology & Engineering"
+    ],
+    "averageRating": 1.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.9.6.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=R4EV4bKz1OAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=R4EV4bKz1OAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=R4EV4bKz1OAC&printsec=frontcover&dq=9780552148054&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=R4EV4bKz1OAC&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Practical_Reliability_Engineering.html?hl=&id=R4EV4bKz1OAC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 102.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 102.99,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "http://books.google.com.au/books?id=R4EV4bKz1OAC&dq=9780552148054&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.0299E8,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.0299E8,
+       "currencyCode": "AUD"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Practical_Reliability_Engineering-sample-epub.acsm?id=R4EV4bKz1OAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Practical_Reliability_Engineering-sample-pdf.acsm?id=R4EV4bKz1OAC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=R4EV4bKz1OAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "This fifth edition retains the unique balanced mixture of reliability theory and applications, thoroughly updated with the latest industry best practices."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "K796PwAACAAJ",
+   "etag": "7lgbdjvoqok",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/K796PwAACAAJ",
+   "volumeInfo": {
+    "title": "The Seeress of Kell",
+    "authors": [
+     "David Eddings"
+    ],
+    "publisher": "Del Rey Books",
+    "publishedDate": "1992",
+    "description": "Garion and his companions must locate his son before Zandramas uses the child in a rite that will raise the Dark Prophesy",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0345377591"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780345377593"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 374,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 109,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=K796PwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=K796PwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=K796PwAACAAJ&dq=9780552148054&hl=&cd=5&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=K796PwAACAAJ&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/The_Seeress_of_Kell.html?hl=&id=K796PwAACAAJ"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=K796PwAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Garion and his companions must locate his son before Zandramas uses the child in a rite that will raise the Dark Prophesy Here is the epochal conclusion to David Eddings&#39; bestselling The Malloreon, the culmination of an unparalleled quest ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "f8WmpXxe_AoC",
+   "etag": "lc4Djmn1z+E",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/f8WmpXxe_AoC",
+   "volumeInfo": {
+    "title": "The Elder Gods",
+    "authors": [
+     "David Eddings",
+     "Leigh Eddings"
+    ],
+    "publisher": "HarperCollins UK",
+    "publishedDate": "2010-03-25",
+    "description": "A new world and a glorious story destined to reach the biggest audience yet.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780007368044"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0007368046"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 512,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 2.5,
+    "ratingsCount": 122,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.2.3.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=f8WmpXxe_AoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=f8WmpXxe_AoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=f8WmpXxe_AoC&printsec=frontcover&dq=9780552148054&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=f8WmpXxe_AoC&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/The_Elder_Gods.html?hl=&id=f8WmpXxe_AoC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 7.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 7.99,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "http://books.google.com.au/books?id=f8WmpXxe_AoC&dq=9780552148054&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 7990000.0,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 7990000.0,
+       "currencyCode": "AUD"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/The_Elder_Gods-sample-epub.acsm?id=f8WmpXxe_AoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=f8WmpXxe_AoC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "A new world and a glorious story destined to reach the biggest audience yet."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "8gnAeiI3yrcC",
+   "etag": "Tmj7Npn66VM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/8gnAeiI3yrcC",
+   "volumeInfo": {
+    "title": "Witch Wraith",
+    "subtitle": "The Dark Legacy of Shannara",
+    "authors": [
+     "Terry Brooks"
+    ],
+    "publisher": "Del Rey",
+    "publishedDate": "2013-07-16",
+    "description": "From bestselling author Terry Brooks comes the final thrilling novel in a brand-new trilogy—The Dark Legacy of Shannara! NEW YORK TIMES BESTSELLER For centuries the Four Lands enjoyed freedom from its demon-haunted past, protected by magic-enhanced borders from the dark dimension known as the Forbidding and the profound evil imprisoned there. But now the unthinkable is happening: The ancient wards securing the barrier between order and mayhem have begun to erode—and generations of bloodthirsty, monstrous creatures, fueled by a rage thousands of years in the making, are poised to spill forth, seeking revenge for what was done to them. Young Elf Arling Elessedil possesses the enchanted means to close the breach and once more seal the denizens of the Forbidding in their prison. But when she falls into the hands of the powerful Federation’s diabolical Prime Minister, her efforts may be doomed. Only her determined sister, Aphen, who bears the Elfstones and commands their magic, has any hope of saving Arling from the hideous fate her captor has in store. Meanwhile, Railing Ohmsford—desperate to save his imprisoned brother—seeks to discover if his famed but ill-fated ancestor Grianne is still alive and willing to help him save the world . . . no matter the odds or the consequences. BONUS: This edition includes an excerpt from Terry Brooks's The High Druid's Blade. Praise for Witch Wraith “Terry Brooks has written a slam-bang conclusion to his The Dark Legacy of Shannara trilogy with the stellar Witch Wraith. . . . He has a keen eye for great world-building as well as unforgettable characters. . . . The Dark Legacy of Shannara trilogy is arguably his best work to date.”—Associated Press “The final chapter in Brooks’s latest trilogy set in his beloved world of Shannara peaks in a bittersweet conclusion that seems to set the stage for future books. A must for the numerous die-hard Shannara fans.”—Library Journal Praise for Terry Brooks “The Sword of Shannara is an unforgettable and wildly entertaining epic, animated by Terry Brooks’s cosmically generative imagination and storytelling joy.”—Karen Russell, New York Times bestselling author of Swamplandia! “If Tolkien is the grandfather of modern fantasy, Terry Brooks is its favorite uncle.”—Peter V. Brett, New York Times bestselling author of The Desert Spear “I can’t even begin to count how many of Terry Brooks’s books I’ve read (and reread) over the years. From Shannara to Landover, his work was a huge part of my childhood.”—Patrick Rothfuss, New York Times bestselling author of The Name of the Wind “Terry Brooks is a master of the craft and a trailblazer who established fantasy as a viable genre. He is required reading.”—Brent Weeks, New York Times bestselling author of The Night Angel Trilogy “The Shannara books were among the first to really capture my imagination. My daydreams and therefore my stories will always owe a debt to Terry Brooks.”—Brandon Mull, #1 New York Times bestselling author of the Beyonders and Fablehaven series",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780345523556"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0345523555"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 432,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 4,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "4.8.7.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=8gnAeiI3yrcC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=8gnAeiI3yrcC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=8gnAeiI3yrcC&dq=9780552148054&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=8gnAeiI3yrcC&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Witch_Wraith.html?hl=&id=8gnAeiI3yrcC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=8gnAeiI3yrcC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "BONUS: This edition includes an excerpt from Terry Brooks&#39;s The High Druid&#39;s Blade. Praise for Witch Wraith “Terry Brooks has written a slam-bang conclusion to his The Dark Legacy of Shannara trilogy with the stellar Witch Wraith. . ."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "64krE5BGr3gC",
+   "etag": "H+Ca9qvO3dY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/64krE5BGr3gC",
+   "volumeInfo": {
+    "title": "Queen Of Sorcery",
+    "subtitle": "Book Two Of The Belgariad",
+    "authors": [
+     "David Eddings"
+    ],
+    "publisher": "Random House",
+    "publishedDate": "2010-02-23",
+    "description": "BOOK 2 OF THE BELGARIAD, the worldwide bestselling fantasy series by master storyteller David Eddings. Discover the epic story that inspired thousands - from Raymond Feist's The Riftwar Cycle series to George R. R. Martin's A Game of Thrones. The Accursed One is not dead... He only sleeps... The evil God Torak covets dominion over all men. If the stolen Orb of Aldur reaches him, he will surely gain what he desires. Garion travels through strange lands with master sorcerers Belgarath and Polgara in frantic pursuit of the Orb. But as his own powers grow, Garion starts to realize that he too may have a part to play – a part he is not sure he wants...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781407056630"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1407056638"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 448,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 286,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.17.10.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=64krE5BGr3gC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=64krE5BGr3gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=64krE5BGr3gC&printsec=frontcover&dq=9780552148054&hl=&cd=8&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=64krE5BGr3gC&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Queen_Of_Sorcery.html?hl=&id=64krE5BGr3gC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 10.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 10.99,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "http://books.google.com.au/books?id=64krE5BGr3gC&dq=9780552148054&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "AUD"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Queen_Of_Sorcery-sample-epub.acsm?id=64krE5BGr3gC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=64krE5BGr3gC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Discover the epic story that inspired thousands - from Raymond Feist&#39;s The Riftwar Cycle series to George R. R. Martin&#39;s A Game of Thrones. The Accursed One is not dead... He only sleeps... The evil God Torak covets dominion over all men."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "pmDglFPpme4C",
+   "etag": "9mbaVbuwekk",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/pmDglFPpme4C",
+   "volumeInfo": {
+    "title": "Dark Destiny",
+    "subtitle": "Number 13 in series",
+    "authors": [
+     "Christine Feehan"
+    ],
+    "publisher": "Hachette UK",
+    "publishedDate": "2011-12-20",
+    "description": "As a child, Destiny saw her family butchered by a vampire who then attacked her and turned her into a creature of the night. The only thing that saved her sanity was a strange psychic connection with a soothing male voice that gave her hope and taught her how to survive. Nicolae Von Shrieder is an ancient Carpathian vampire hunter, and it is he who has been helping Destiny. Convinced she is his lifemate, he has been desperately searching for her, as only she can save him from turning into the very abomination he hunts. Destiny however, does not recognise any difference between Carpathians and vampires and repeatedly refuses his advances.But, for the first time, vampire forces are gathering together in a deadly unified plot against the Carpathians. Nicolae must find a way to earn Destiny's trust, and fast, as they may be the only ones able to unravel the secret that could save the Carpathian race from total destruction.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781405514286"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1405514280"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 400,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 47,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.5.4.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=pmDglFPpme4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=pmDglFPpme4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=pmDglFPpme4C&printsec=frontcover&dq=9780552148054&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=pmDglFPpme4C&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Dark_Destiny.html?hl=&id=pmDglFPpme4C"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 7.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 7.99,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "http://books.google.com.au/books?id=pmDglFPpme4C&dq=9780552148054&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 7990000.0,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 7990000.0,
+       "currencyCode": "AUD"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Dark_Destiny-sample-epub.acsm?id=pmDglFPpme4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=pmDglFPpme4C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "As a child, Destiny saw her family butchered by a vampire who then attacked her and turned her into a creature of the night."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "LSylyYw5RzwC",
+   "etag": "9V+ky6jL+so",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/LSylyYw5RzwC",
+   "volumeInfo": {
+    "title": "Whispers Under Ground",
+    "authors": [
+     "Ben Aaronovitch"
+    ],
+    "publisher": "Hachette UK",
+    "publishedDate": "2012-06-21",
+    "description": "Doctor Who Screenwriter Ben Aaronovitch's superbly entertaining supernatural crime series has, with its witty one-liners and wonderfully erudite take on London, won a legion of fans in double quick time. Peter Grant is learning magic fast. And it's just as well - he's already had run-ins with the deadly supernatural children of the Thames and a terrifying killer in Soho. Progression in the Police Force is less easy. Especially when you work in a department of two. A department that doesn't even officially exist. A department that if you did describe it to most people would get you laughed at. And then there's his love life. The last person he fell for ended up seriously dead. It wasn't his fault, but still. Now something horrible is happening in the labyrinth of tunnels that make up the tube system that honeycombs the ancient foundations of London. And delays on the Northern line is the very least of it. Time to call in the Met's Economic and Specialist Crime Unit 9, aka 'The Folly'. Time to call in PC Peter Grant, Britain's Last Wizard.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780575097674"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0575097671"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 384,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 18,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.6.5.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com.au/books/content?id=LSylyYw5RzwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com.au/books/content?id=LSylyYw5RzwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.au/books?id=LSylyYw5RzwC&printsec=frontcover&dq=9780552148054&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.com.au/books?id=LSylyYw5RzwC&dq=9780552148054&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com.au/books/about/Whispers_Under_Ground.html?hl=&id=LSylyYw5RzwC"
+   },
+   "saleInfo": {
+    "country": "AU",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "AUD"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "AUD"
+    },
+    "buyLink": "http://books.google.com.au/books?id=LSylyYw5RzwC&dq=9780552148054&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "AUD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "AUD"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "AU",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com.au/books/download/Whispers_Under_Ground-sample-epub.acsm?id=LSylyYw5RzwC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com.au/books/reader?id=LSylyYw5RzwC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Doctor Who Screenwriter Ben Aaronovitch&#39;s superbly entertaining supernatural crime series has, with its witty one-liners and wonderfully erudite take on London, won a legion of fans in double quick time."
+   }
+  }
+ ]
+}

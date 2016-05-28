@@ -3,7 +3,7 @@ class RereadController extends Controller
 {
 	public function home()
 	{
-		echo $_SESSION["logged_in_user"];
+		echo $this->get_account_id()
 	}
 }
 ?>

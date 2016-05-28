@@ -20,6 +20,11 @@ foreach (glob("app/controllers/*.php") as $filename)
     include $filename;
 }
 
+foreach (glob("app/services/*.php") as $filename)
+{
+    include $filename;
+}
+
 date_default_timezone_set("UTC");
 session_start();
 
