@@ -1,5 +1,4 @@
 <?php
-
   class LoginService
   {
     const UNKNOWN_USERNAME = 1;

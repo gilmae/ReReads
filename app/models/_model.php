@@ -92,7 +92,7 @@
        return $model;
     }
 
-    protected static function build_all($array, $klass)
+    public static function build_all($array, $klass)
     {
        $models = [];
        foreach($array as $item)
