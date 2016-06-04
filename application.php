@@ -15,6 +15,11 @@ foreach (glob("app/models/*.php") as $filename)
     include $filename;
 }
 
+foreach (glob("db/*.php") as $filename)
+{
+    include $filename;
+}
+
 foreach (glob("app/controllers/*.php") as $filename)
 {
     include $filename;

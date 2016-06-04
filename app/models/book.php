@@ -4,10 +4,16 @@ class Book extends Model
 {
 
   public $name = '';
+  public $publisher = '';
+  public $publication_year = '';
+  public $pages = 0;
+  public $isbn = '';
+  public $isbn13 = '';
+  public $description = '';
 
   public function find_by_owner($account_id)
   {
-    $conn = Model::get_connection();
+    $conn = Repository::get_connection();
 
     $data = $conn->select("book",
       ["[><]collection" => ["id" => "book_id"]],
@@ -15,30 +21,19 @@ class Book extends Model
       ["collection.account_id"=>$account_id]
     );
 
-    return Model::build_all($data, "Book");
+    return Repository::build_all($data, "Book");
   }
 
   public function find_by_isbn($isbn)
   {
-    $conn = Model::get_connection();
+    $conn = Repository::get_connection();
 
     $data = $conn->select("book",
       ["id", "name", "created_at", "updated_at", "publisher", "publication_year", "pages", "isbn", "isbn13", "Description"],
       ["OR" => ["isbn13"=>$isbn, "isbn"=>$isbn]]
     );
 
-    return Model::build_all($data, "Book");
-  }
-
-  protected function insert_fields(){
-    $fields = get_object_vars($this);
-		return array_diff($fields, array("id"));
-  }
-
-  protected function update_fields()
-  {
-    $fields = get_object_vars($this);
-		return array_diff($fields, array("id"));
+    return Repository::build_all($data, "Book");
   }
 }
 

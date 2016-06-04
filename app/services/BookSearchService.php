@@ -3,7 +3,7 @@
    {
      public function Search($searchTerm, $page, $pageSize)
      {
-       $conn = Model::get_connection();
+       $conn = Repository::get_connection();
 
        $data = $conn->select("book", [
            "[>]book_author" => ["id" => "book_id"],
@@ -24,7 +24,7 @@
        );
 
        echo($conn->last_query());
-       return Book::build_all($data, "Book");
+       return Repository::build_all($data, "Book");
      }
    }
  ?>

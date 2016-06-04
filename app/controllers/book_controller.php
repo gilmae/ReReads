@@ -1,9 +1,25 @@
 <?php
-class BookController
-{
-	public function search($params)
-	{
 
+class BookController extends Controller
+{
+	public function add()
+	{
+    $this->view("book", "new", null);
+  }
+
+  public function add_post($params)
+  {
+    BookUpsertService::upsert($_POST);
+    $this->view("book", "new", null);
+  }
+
+  public function search($params)
+	{
+		$searchTerm = $_GET["q"];
+	}
+
+	public function search_google($params)
+	{
 		$searchTerm = $_GET["q"];
     $client = new Google_Client();
     $client->setDeveloperKey($GLOBALS['google_api_keys']["google_books"]);

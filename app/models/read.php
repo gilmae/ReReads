@@ -7,19 +7,19 @@ class Read extends Model
   public $book_id = 0;
   public $account_id = 0;
   public $thoughts = '';
-  
+
   public static function find_by_book_and_account($account_id, $book_id)
   {
-    $conn = Model::get_connection();
-    $data = $conn->select("read", 
+    $conn = Repository::get_connection();
+    $data = $conn->select("read",
        ["id","read_at", "book_id", "account_id", "thoughts", "created_at", "updated_at"],
        ["book_id"=>$book_id, "account_id"=>$account_id]
     );
 
-    return Model::build_all($data, "Read");
+    return Repository::build_all($data, "Read");
   }
-  
-  protected function insert_fields(){
+
+  public function insert_fields(){
       return [
         "read_at"=>$this->read_at,
         "book_id"=>$this->book_id,
@@ -28,7 +28,7 @@ class Read extends Model
       ];
   }
 
-  protected function update_fields()
+  public function update_fields()
   {
     return [
         "read_at"=>$this->read_at,
