@@ -15,69 +15,26 @@ class BookController extends Controller
 
   public function search($params)
 	{
-		$searchTerm = $_GET["q"];
+    // Get the books that match
+		$books = BookSearchService::search($_GET["q"], 0, 20);
+    $authors = [];
+    // Get the authors of all these books
+    foreach($books as $book){
+			$a = GetAuthorsService::GetForBook($book->id);
+			if (!is_array($a))
+			{
+				$a = array($a);
+			}
+ 		  $authors[$book->isbn13] = $a;
+		}
+
+    $this->view("book", "_search_results", (object)array('books'=>$books, 'authors'=>$authors));
 	}
 
 	public function search_google($params)
 	{
-		$searchTerm = $_GET["q"];
-    $client = new Google_Client();
-    $client->setDeveloperKey($GLOBALS['google_api_keys']["google_books"]);
-
-    $service = new Google_Service_Books($client);
-
-    $optParams = array();
-    $results = $service->volumes->listVolumes($searchTerm, $optParams);
-
-		var_dump($results);
-
-    foreach ($results as $item) {
-      $isbn = "";
-			$isbn13 = "";
-			foreach ($item->volumeInfo['industryIdentifiers'] as $ids) {
-				if ($ids['type'] == "ISBN_10") {
-					$isbn = $ids['identifier'];
-				}
-				elseif ($ids['type'] == "ISBN_13") {
-					$isbn13 = $ids['identifier'];
-				}
-			}
-
-			$book = Book::find_by_isbn(array($isbn13, $isbn));
-			if (empty($book)){
-				$book = new Book;
-				$book->isbn = $isbn;
-				$book->isbn13 = $isbn13;
-				$book->name = $item->volumeInfo['title'];
-				$book->publisher = $item->volumeInfo['publisher'];
-        if (!empty($item->volumeInfo['publishedDate'])) {
-					$book->publication_year = strftime("%Y", strtotime($item->volumeInfo['']));
-				}
-				$book->description = $item->volumeInfo['description'];
-
-				$book->pages = $item->volumeInfo['pageCount'];
-
-				$book->save();
-
-			  $authors = array();
-
-				if (!empty($item['volumeInfo']['authors'])) {
-        	foreach ($item['volumeInfo']['authors'] as $authorItem) {
-        	$author = Author::find_by_name($authorItem);
-
-				 		if (empty($author)) {
-					 		$author = new Author;
-					 		$author->name = $authorItem;
-					 		$author->save();
-				 		}
-
-						if (!empty($author) && !empty($book)) {
-							$author->link_to_book($book->id);
-						}
-					}
-				}
-			}
-		}
+     $books_and_authors = BookSearchService::SearchGoogle($_GET["q"], 0, 20);
+		 $this->view("book", "_search_results", $books_and_authors);
 	}
 }
 ?>

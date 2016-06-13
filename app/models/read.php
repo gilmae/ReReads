@@ -18,25 +18,6 @@ class Read extends Model
 
     return Repository::build_all($data, "Read");
   }
-
-  public function insert_fields(){
-      return [
-        "read_at"=>$this->read_at,
-        "book_id"=>$this->book_id,
-        "thoughts"=>$this->thoughts,
-        "account_id"=>$this->account_id
-      ];
-  }
-
-  public function update_fields()
-  {
-    return [
-        "read_at"=>$this->read_at,
-        "book_id"=>$this->book_id,
-        "account_id"=>$this->account_id,
-        "thoughts"=>$this->thoughts
-      ];
-  }
 }
 
  ?>

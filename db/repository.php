@@ -37,7 +37,7 @@
         }
 
         $model = new $klass();
-        Repository::from_array($model, $array[0]);
+        $model->from_array($array[0]);
         return $model;
      }
 
@@ -47,7 +47,7 @@
         foreach($array as $item)
         {
           $model = new $klass();
-          Repository::from_array($model, $item);
+          $model->from_array($item);
           array_push($models, $model);
         }
         return $models;

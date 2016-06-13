@@ -7,15 +7,5 @@ class Progress extends Model
 	public $notes = "";
 
 
-	public function insert_fields()
-	{
-		$fields = get_object_vars($this);
-		return array_diff($fields, array("id"));
-	}
-
-	public function update_fields()
-	{
-		$fields = get_object_vars($this);
-		return array_diff($fields, array("id"));
-	}
+	
 }

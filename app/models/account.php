@@ -15,19 +15,5 @@ class Account extends Model
 
 		return Repository::build_first($data, "Account");
 	}
-
-	public function insert_fields()
-	{
-		return ["name"=>$this->name,
-			"password"=>$this->password
-		];
-	}
-
- 	public function update_fields()
-	{
-		return ["name"=>$this->name,
-			"password"=>$this->password
-		];
-	}
 }
 ?>

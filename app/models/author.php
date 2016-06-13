@@ -35,19 +35,6 @@ class Author extends Model
 
     $conn->insert("book_author", array("book_id"=>$book_id, "author_id"=>$this->id));
   }
-
-  public function insert_fields(){
-    return [
-        "name"=>$this->name
-      ];
-  }
-
-  public function update_fields()
-  {
-    return [
-        "name"=>$this->name
-      ];
-  }
 }
 
  ?>

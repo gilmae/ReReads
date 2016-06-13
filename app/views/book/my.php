@@ -10,12 +10,12 @@
 	</thead>
 	<tbody>
 <?php
-foreach($books as $book)
+foreach($model as $book)
 {
 ?>
 		<tr>
 			<td><?=$book->name?></td>
-			<td><?=$book->authors?></td>
+
 			<td><a href="read.php?book_id=<?=$book->id?>" title="Create a read of this book">Read this</td>
 		</tr>
 <?php
@@ -23,4 +23,3 @@ foreach($books as $book)
 ?>
 	</tbody>
 </table>
-				
