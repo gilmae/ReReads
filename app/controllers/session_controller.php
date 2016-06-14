@@ -2,15 +2,11 @@
 
 class SessionController extends Controller
 {
-	public function add()
+	public function collect_post($params)
 	{
-		$book_id = trim($_POST["book_id"]);
-
-		$collection = new Collection();
-		$collection->book_id = $book_id;
-		$collection->account_id = $this->get_account_id();
-
-		$collection->save();
+    $book = trim($params["id"]);
+		$user = Account::find($this->get_account_id());
+		AddBookToCollection::execute($book, $user);
 
 		header('Location: http://reread.local/i');
 	}
