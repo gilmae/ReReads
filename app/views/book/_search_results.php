@@ -25,7 +25,7 @@ foreach($model->books as $book)
 					 	echo join(", ", array_map($f, $model->authors[$book->isbn13]));
 				 	}
 				 ?></td>
-			<td><a href="collect.php?book_id=<?=$book->isbn13?>" title="Collect this book">Collect this</td>
+			<td><a href="/i/collect/<?=$book->isbn13?>" title="Collect this book">Collect this</td>
 		</tr>
 <?php
 }

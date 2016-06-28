@@ -33,7 +33,7 @@ class BookController extends Controller
 
 	public function search_google($params)
 	{
-     $books_and_authors = BookSearchService::SearchGoogle($_GET["q"], 0, 20);
+     $books_and_authors = GoogleService::SearchBooks($_GET["q"], 0, 20);
 		 $this->view("book", "_search_results", $books_and_authors);
 	}
 }

@@ -8,7 +8,7 @@ class SessionController extends Controller
 		$user = Account::find($this->get_account_id());
 		AddBookToCollection::execute($book, $user);
 
-		header('Location: http://reread.local/i');
+		#header('Location: http://reread.local/i');
 	}
 
 	public function start_reading()
