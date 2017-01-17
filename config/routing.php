@@ -1,4 +1,5 @@
-<?php/*
+<?php
+/*
 
 /i						User's detail's'
 /i/am					Login
@@ -9,9 +10,7 @@
 /my/read_of/{{book}}	User's current reading session with a book
 
 / 						general landing page
-*/?>
-
-<?php
+*/
 
 require "vendor/altorouter/altorouter/AltoRouter.php";
 class Router

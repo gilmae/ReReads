@@ -44,6 +44,11 @@
      public static function build_all($array, $klass)
      {
         $models = [];
+
+        if (empty($array)) {
+          return $models;
+        }
+        
         foreach($array as $item)
         {
           $model = new $klass();
