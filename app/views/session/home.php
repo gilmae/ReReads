@@ -1,12 +1,12 @@
-<h2 class="test">Hello <?= $model->user->name ?></h2>
+<h2 class="test">Hello </h2>
 
-<h3>My Reads</h3>
+<h3>Currently Reading</h3>
 <ul>
 <?php
 
-foreach ($model->owned_books as $book)
+foreach ($model->reads as $read)
 {
-	echo($html->render_template("app/views/session/_book_tile.php", array('model'=>$book)));
+	echo($html->render_template("app/views/session/_book_tile.php", array('model'=>$model->books[$read->book_id])));
 }
 ?>
 </ul>

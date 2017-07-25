@@ -56,14 +56,17 @@ class SessionController extends Controller
 
 	public function index()
 	{
-		$user = Account::find($this->get_account_id());
-
-		if (!empty($user))
+		echo("test");
+		$reads = ReviewService::GetCUrrent();
+		$books = [];
+		foreach ($reads as $read)
 		{
-			$owned_books = Book::find_by_owner($user->id);
-			$this->view("session", "home", (object)array('user'=>$user, 'owned_books'=>$owned_books));
-			return;
+				$books[$read->book_id] = BookService::GetBook($read->book_id);
 		}
+
+		$this->view("session", "home", (object)array('reads'=>$reads, 'books'=>$books));
+		return;
+
 		header('Location: http://reread.local/i/am');
 	}
 }
