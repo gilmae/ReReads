@@ -3,3 +3,7 @@ composer.phar
 *.lock
 vendor/**/*
 config/google_api.php
+
+composer.lock
+
+composer.lock

@@ -56,8 +56,7 @@ class SessionController extends Controller
 
 	public function index()
 	{
-		echo("test");
-		$reads = ReviewService::GetCUrrent();
+		$reads = ReadService::GetActive();
 		$books = [];
 		foreach ($reads as $read)
 		{

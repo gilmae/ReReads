@@ -1,7 +1,7 @@
 <?php
-  class ReviewService
+  class ReadService
   {
-    public function GetCurrent()
+    public function GetActive()
     {
       $conn = Repository::get_connection();
       $data = $conn->select("read",
@@ -11,5 +11,7 @@
 
       return Repository::build_all($data, "Read");
     }
+
+    public function Get
   }
  ?>
