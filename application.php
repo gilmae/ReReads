@@ -31,8 +31,10 @@ foreach (glob("app/services/*.php") as $filename)
 }
 
 date_default_timezone_set("UTC");
-session_start();
-
+if (php_sapi_name() != "cli")
+{
+  session_start();
+}
 
 	// TODO Find a place for this, some sort of View renderer
 

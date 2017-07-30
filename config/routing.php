@@ -17,7 +17,7 @@ class Router
 {
   private $router;
 
-  function Router()
+  function __construct()
   {
     $this->router = new AltoRouter();
 
