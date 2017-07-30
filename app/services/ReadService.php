@@ -12,6 +12,6 @@
       return Repository::build_all($data, "Read");
     }
 
-    public function Get
+
   }
  ?>
